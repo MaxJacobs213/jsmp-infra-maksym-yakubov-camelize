@@ -11,6 +11,8 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\"",
     "test:unit": "jest --no-cache --runInBand",
+    "test:coverage": "npm run test:unit -- --coverage",
+    "test:badges": "npm run test:coverage  && jest-coverage-badges",
     "prepublishOnly": "npm run clean && npm run compile && npm run test:unit",
     "preversion": "npm run lint",
     "version": "auto-changelog -p && git add CHANGELOG.md"
@@ -39,6 +41,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^28.1.1",
+    "jest-coverage-badges": "^1.1.2",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "ts-jest": "^28.0.5",

@@ -4,7 +4,7 @@ module.exports = {
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest',
   },
-  collectCoverage: true,
+  coverageReporters: ['json-summary', 'text', 'lcov'],
   globals: {
     'ts-jest': {
       tsconfig: 'tsconfig.json',
