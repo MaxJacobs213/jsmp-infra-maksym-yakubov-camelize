@@ -12,7 +12,7 @@
     "lint": "eslint \"src/**/*.ts\"",
     "test:unit": "jest --no-cache --runInBand",
     "prepublishOnly": "npm run clean && npm run compile && npm run test:unit",
-    "preversion": "npm tun lint",
+    "preversion": "npm run lint",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "files": [
