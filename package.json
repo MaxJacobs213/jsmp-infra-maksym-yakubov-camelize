@@ -11,7 +11,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\"",
     "test:unit": "jest --no-cache --runInBand",
-    "prepublishOnly": "npm run clean && npn run compile && npm run test:unit",
+    "prepublishOnly": "npm run clean && npm run compile && npm run test:unit",
     "preversion": "npm tun lint"
   },
   "files": [
