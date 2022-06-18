@@ -31,6 +31,7 @@
   ],
   "devDependencies": {
     "@types/jest": "^28.1.2",
+    "@types/lodash.camelcase": "^4.3.7",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "auto-changelog": "^2.4.0",
@@ -42,5 +43,8 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "lodash.camelcase": "^4.3.0"
   }
 }
